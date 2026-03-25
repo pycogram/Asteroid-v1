@@ -102,7 +102,7 @@ const HeroSection = () => {
                 href="https://pump.fun/coin/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-hero flex items-center justify-center gap-2 text-lg"
+                className="btn-hero flex items-center w-fit md:w-auto justify-center gap-2 text-lg"
               >
                 Buy on Pumpfun
                 <ExternalLink className="w-5 h-5" />
@@ -111,7 +111,7 @@ const HeroSection = () => {
                 href="https://x.com/i/communities/2036496453833490691"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary-hero flex items-center justify-center gap-2 text-lg"
+                className="btn-secondary-hero flex w-fit md:w-auto items-center justify-center gap-2 text-lg"
               >
                 <Users className="w-5 h-5" />
                 Join Us

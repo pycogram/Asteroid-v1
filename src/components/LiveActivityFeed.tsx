@@ -104,7 +104,7 @@ const LiveActivityFeed = () => {
 
         {/* Live Transaction Feed */}
         <ScrollReveal delay={0.2}>
-          <div className="bg-background rounded-sm border-2 border-border hover:border-primary/50 transition-all hover:shadow-x lp-4 sm:p-6">
+          <div className="bg-background rounded-sm py-3 px-2 border-2 border-border hover:border-primary/50 transition-all hover:shadow-x lp-4 sm:p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-display text-lg font-bold flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-success animate-pulse" />
@@ -144,6 +144,22 @@ const LiveActivityFeed = () => {
           </div>
         </ScrollReveal>
       </div>
+
+        {/* Dexscreener embed */}
+        {/* <div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-[90%] mt-[4rem] mx-auto rounded-2xl border border-border overflow-hidden box-glow"
+        >
+          <iframe
+            src="https://dexscreener.com/solana/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump?embed=1&theme=dark"
+            title="Dexscreener Chart"
+            className="w-full h-[400px] md:h-[500px]"
+            loading="lazy"
+          />
+        </div> */}
+
     </section>
   );
 };
