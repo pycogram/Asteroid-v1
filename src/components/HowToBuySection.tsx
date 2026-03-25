@@ -6,17 +6,17 @@ const steps = [
   {
     number: "01",
     title: "Get a Web3 Wallet",
-    description: "Download MetaMask or Trust Wallet from your app store or browser extensions.",
+    description: "Download Phantom or Solfare from your app store or browser extensions.",
     icon: "📱",
     link: {
-      text: "Get MetaMask",
-      url: "https://metamask.io/download/",
+      text: "Get Phantom wallet",
+      url: "https://phantom/download/",
     },
   },
   {
     number: "02",
-    title: "Buy BNB",
-    description: "Purchase BNB from Binance or your preferred exchange and send it to your wallet.",
+    title: "Buy Sol",
+    description: "Purchase Sol from Binance or your preferred exchange and send it to your wallet address.",
     icon: "💰",
     link: {
       text: "Visit Binance",
@@ -25,31 +25,31 @@ const steps = [
   },
   {
     number: "03",
-    title: "Connect to PancakeSwap",
-    description: "Visit PancakeSwap and connect your wallet to the BNB Smart Chain.",
+    title: "Connect to Pumpfun",
+    description: "Visit Pumpfun and connect your wallet then sign in.",
     icon: "🔗",
     link: {
-      text: "Open PancakeSwap",
-      url: "https://pancakeswap.finance/",
+      text: "Open Pumpfun",
+      url: "https://pump.fun/",
     },
   },
   {
     number: "04",
     title: "Paste Contract Address",
     description: "Copy our contract address and paste it in the token search field.",
-    icon: "📋",
-    contract: "0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444",
+    icon: "🐿️",
+    contract: "CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump",
   },
   {
     number: "05",
-    title: "Swap BNB for HorsePi",
-    description: "Enter the amount of BNB you want to swap and confirm the transaction.",
+    title: "Swap Sol for $VNUT",
+    description: "Enter the amount of SOL you want to swap and confirm the transaction.",
     icon: "🔄",
   },
   {
     number: "06",
     title: "Add to Wallet",
-    description: "Add the token to your wallet to see your HorsePi balance. Welcome to the crew!",
+    description: "Add the token to your wallet to see your $VNUT balance. Welcome to the crew!",
     icon: "🎉",
   },
 ];
@@ -77,10 +77,10 @@ const HowToBuySection = () => {
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Grab Your <span className="text-gradient-gold">Hardhat</span>
+              Grab Your <span className="text-gradient-gold">Puff-Puff</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Follow these simple steps to join the construction crew
+              Follow these simple steps to join the vaping crew
             </p>
           </div>
         </ScrollReveal>
@@ -123,7 +123,7 @@ const HowToBuySection = () => {
                   {step.contract && (
                     <button
                       onClick={() => copyContract(index, step.contract!)}
-                      className="w-full flex items-center gap-2 p-2 rounded-xl bg-muted/50 hover:bg-muted transition-colors text-left"
+                      className="w-[80%] md:w-[250px] flex items-center gap-2 p-2 rounded-xl bg-muted/50 hover:bg-muted transition-colors text-left"
                     >
                       <code className="flex-1 text-xs font-mono text-foreground truncate">
                         {step.contract}
@@ -152,13 +152,13 @@ const HowToBuySection = () => {
         <ScrollReveal delay={0.4}>
           <div className="text-center mt-12">
             <a
-              href="https://pancakeswap.finance/swap?outputCurrency=0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444"
+              href="https://pump.fun/coin/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hero inline-flex items-center gap-3 text-lg"
             >
               <Wallet className="w-5 h-5" />
-              Buy HorsePi Now
+              Buy $VNUT Now
               <ExternalLink className="w-5 h-5" />
             </a>
           </div>

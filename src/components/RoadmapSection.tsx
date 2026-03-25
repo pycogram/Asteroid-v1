@@ -4,35 +4,36 @@ import ScrollReveal from "./ScrollReveal";
 const phases = [
   {
     phase: "Phase 1",
-    title: "Laying the Foundation",
+    title: "Vaping the Foundation",
     status: "completed",
-    icon: "🧱",
+    icon: "🐿️",
     items: [
-      "Token Launch on BNB Chain",
-      "Community Takeover (CTO)",
+      "Token Launch on Pumpfun",
+      "Community Driven",
       "Social Media Setup",
-      "Initial Community Building",
-      "Website Launch",
+      "$VNUT Bonded",
+      "Website V1 Launch",
     ],
   },
   {
     phase: "Phase 2",
-    title: "Framing the Structure",
+    title: "vaping the Structure",
     status: "in-progress",
     icon: "🪵",
     items: [
       "Marketing Campaigns",
       "Influencer Partnerships",
-      "CoinGecko & CMC Listings",
+      "Holder Growth to 3,000+",
       "Community Expansion",
-      "Holder Growth to 5,000+",
+      "Moonshoot Listings",
+      "CoinGecko & CMC Listings",
     ],
   },
   {
     phase: "Phase 3",
-    title: "Building the Walls",
+    title: "Vaping the Walls",
     status: "upcoming",
-    icon: "🏗️",
+    icon: "💨",
     items: [
       "CEX Listing Applications",
       "NFT Collection Launch",
@@ -43,20 +44,19 @@ const phases = [
   },
   {
     phase: "Phase 4",
-    title: "Raising the Roof",
+    title: "Vaping the Roof",
     status: "upcoming",
-    icon: "🏠",
+    icon: "🌳",
     items: [
       "Major CEX Listings",
-      "HorsePi Ecosystem Expansion",
-      "Community DAO Governance",
+      "$Vnut Ecosystem Expansion",
       "Cross-chain Bridge",
       "Global Marketing Push",
     ],
   },
   {
     phase: "Phase 5",
-    title: "Grand Opening",
+    title: "Vape Opening",
     status: "upcoming",
     icon: "🎉",
     items: [
@@ -64,7 +64,7 @@ const phases = [
       "Major Exchange Listings",
       "Global Community Events",
       "Charitable Initiatives",
-      "To The Moon! 🌙",
+      "To The Moon! 🐿️",
     ],
   },
 ];
@@ -108,10 +108,10 @@ const RoadmapSection = () => {
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Construction <span className="text-gradient-gold">Timeline</span>
+              Puff-Puff <span className="text-gradient-gold">Timeline</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our blueprint to building the ultimate meme coin ecosystem
+              Our blueprint to vaping the ultimate meme coin ecosystem
             </p>
           </div>
         </ScrollReveal>
@@ -132,7 +132,7 @@ const RoadmapSection = () => {
                     </div>
 
                     {/* Content Card */}
-                    <div className={`flex-1 card-construction p-6 ${phase.status === 'in-progress' ? 'ring-2 ring-primary ring-offset-2 ring-offset-background' : ''}`}>
+                    <div className={`flex-1 bg-background rounded-3xl border-2 border-border hover:border-primary/50 transition-all hover:shadow-x p-6 ${phase.status === 'in-progress' ? 'ring-2 ring-primary ring-offset-2 ring-offset-background' : ''}`}>
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(phase.status)} mb-2`}>

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Copy, Check, ExternalLink, Heart } from "lucide-react";
-import horsePiLogo from "@/assets/horsepi-logo.png";
+import squirrelLogo from "@/assets/vnut-logo.png";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444";
+  const contractAddress = "CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress);
@@ -14,13 +14,12 @@ const Footer = () => {
 
   const links = {
     socials: [
-      { name: "Twitter / X", url: "https://x.com/pihorsebsc_cto" },
-      { name: "Telegram", url: "https://t.me/pihorsebsc_cto" },
+      { name: "Twitter / X", url: "https://x.com/i/communities/2036496453833490691" },
     ],
     resources: [
-      { name: "PancakeSwap", url: "https://pancakeswap.finance/swap?outputCurrency=0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444" },
-      { name: "BSCScan", url: `https://bscscan.com/token/${contractAddress}` },
-      { name: "DexTools", url: `https://www.dextools.io/app/en/bnb/pair-explorer/${contractAddress}` },
+      { name: "Pumpswap", url: `https://pump.fun/coin/${contractAddress}` },
+      { name: "Solscan", url: `https://solscan.io/token/${contractAddress}` },
+      { name: "Dexscreener", url: `https://dexscreener.com/solana/8drcdmpftp8ddp4uqtog3brzdwhx2y5c3ykd3jkgbyzp` },
     ],
   };
 
@@ -34,14 +33,14 @@ const Footer = () => {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src={horsePiLogo} alt="HorsePi" className="w-12 h-12 rounded-full border-2 border-primary" />
+              <img src={squirrelLogo} alt="VNUT" className="w-12 h-12 rounded-sm border border-border" />
               <div>
-                <h4 className="font-display text-xl font-bold">HorsePi</h4>
-                <p className="text-sm opacity-80">派马 • BNB Chain</p>
+                <h4 className="font-display text-xl font-bold">The Vaping Squirrel</h4>
+                <p className="text-sm opacity-80">$VNUT • Solana</p>
               </div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Building wealth, one block at a time. Join the construction crew and be part of the future!
+              The puff-puffers are already living in the future...
             </p>
           </div>
 
@@ -90,7 +89,7 @@ const Footer = () => {
             <h5 className="font-display font-bold text-lg mb-4">Contract Address</h5>
             <button
               onClick={copyToClipboard}
-              className="w-[95%] sm:w-full flex items-center gap-2 p-3 rounded-xl bg-background/10 hover:bg-background/20 transition-colors text-left"
+              className="w-[85%] sm:w-full flex items-center gap-2 p-3 rounded-xl bg-background/10 hover:bg-background/20 transition-colors text-left"
             >
               <code className="flex-1 text-xs font-mono truncate opacity-80">
                 {contractAddress}
@@ -110,7 +109,7 @@ const Footer = () => {
         {/* Disclaimer */}
         <div className="border-t border-secondary-foreground/20 pt-8 mb-8">
           <p className="text-xs opacity-60 text-center max-w-3xl mx-auto leading-relaxed">
-            <strong>Disclaimer:</strong> Cryptocurrency investments carry significant risk. The value of HorsePi can be volatile and may result in loss of funds. 
+            <strong>Disclaimer:</strong> Cryptocurrency investments carry significant risk. The value of vNUT can be volatile and may result in loss of funds. 
             This is not financial advice. Always Do Your Own Research (DYOR) before investing. Only invest what you can afford to lose.
           </p>
         </div>
@@ -118,14 +117,14 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm opacity-80">
           <p className="flex items-center gap-2">
-            Built with for HorsePi Community
+            Built with for $VNUT Community
           </p>
           <div className="flex items-center gap-4">
-            <span>© 2026 HorsePi</span>
+            <span>© 2026 $VNUT</span>
             <span>•</span>
             <span className="flex items-center gap-1">
               <span className="text-lg">⛓️</span>
-              BNB Chain
+              Solana Chain
             </span>
           </div>
         </div>

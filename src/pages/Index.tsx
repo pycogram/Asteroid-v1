@@ -7,15 +7,19 @@ import HowToBuySection from "@/components/HowToBuySection";
 import RoadmapSection from "@/components/RoadmapSection";
 import CommunitySection from "@/components/CommunitySection";
 import Footer from "@/components/Footer";
+import GallerySection from "@/components/GallerySection";
+import PfpMemeGenerator from "@/components/PfpMemeGenerator";
 
 const Index = () => {
-  return (
+  return ( 
     <div className="min-h-screen bg-background">
       <Header />
       <main>
         <HeroSection />
-        <LiveActivityFeed />
         <AboutSection />
+        <PfpMemeGenerator />
+        <GallerySection />
+        <LiveActivityFeed />
         <TokenomicsSection />
         <HowToBuySection />
         <RoadmapSection />

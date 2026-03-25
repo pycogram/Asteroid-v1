@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, ExternalLink } from "lucide-react";
-import horsePiLogo from "@/assets/horsepi-logo.png";
+import vnutLogo from "@/assets/vnut-logo.png";
 import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
@@ -8,6 +8,8 @@ const Header = () => {
 
   const navLinks = [
     { name: "About", href: "#about" },
+    { name: "Meme", href: "#meme"},
+    { name: "Gallery", href: "#gallery" },
     { name: "Tokenomics", href: "#tokenomics" },
     { name: "How to Buy", href: "#how-to-buy" },
     { name: "Roadmap", href: "#roadmap" },
@@ -21,15 +23,15 @@ const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <img 
-              src={horsePiLogo} 
-              alt="HorsePi Logo" 
-              className="w-12 h-12 rounded-full border border-primary shadow-lg group-hover:scale-110 transition-transform"
+              src={vnutLogo} 
+              alt="VNUT Logo" 
+              className="w-10 h-10 md:w-12 w:h-12 rounded-sm border border-border shadow-lg group-hover:scale-110 transition-transform"
             />
             <div className="hidden sm:block">
               <h1 className="font-display text-xl font-bold text-foreground">
-                HorsePi
+                $VNUT
               </h1>
-              <p className="text-xs text-muted-foreground font-medium">派马 • BNB Chain</p>
+              <p className="text-xs text-muted-foreground font-medium">The Vaping Squirrel</p>
             </div>
           </a>
 
@@ -51,12 +53,12 @@ const Header = () => {
           <div className="flex items-center absolute md:relative right-[6rem] md:right-[unset] gap-3">
             <ThemeToggle />
             <a
-              href="https://pancakeswap.finance/swap?outputCurrency=0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444"
+              href="https://pump.fun/coin/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden xl:flex btn-hero text-sm py-2 px-4 items-center gap-2"
             >
-              Buy on PancakeSwap
+              Buy on Pumpfun
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
@@ -85,12 +87,12 @@ const Header = () => {
                 </a>
               ))}
               <a
-                href="https://pancakeswap.finance/swap?outputCurrency=0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444"
+                href="https://pump.fun/coin/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-hero text-center py-3 mt-2"
               >
-                Buy on PancakeSwap
+                Buy on Pumpfun
               </a>
             </div>
           </nav>

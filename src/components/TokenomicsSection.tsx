@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 const TokenomicsSection = () => {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444";
+  const contractAddress = "CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress);
@@ -13,11 +13,11 @@ const TokenomicsSection = () => {
   };
 
   const tokenInfo = [
-    { label: "Token Name", value: "HorsePi" },
-    { label: "Symbol", value: "派马 (HorsePi)" },
-    { label: "Blockchain", value: "BNB Smart Chain (BSC)" },
-    { label: "Token Type", value: "BEP-20" },
-    { label: "Project Type", value: "Community Takeover (CTO)" },
+    { label: "Token Name", value: "The Vaping Squirrel" },
+    { label: "Symbol", value: "$VNUT" },
+    { label: "Blockchain", value: "Solana" },
+    { label: "Token Type", value: "Token 2099" },
+    { label: "Project Type", value: "Community Driven" },
   ];
 
   return (
@@ -37,15 +37,15 @@ const TokenomicsSection = () => {
         <ScrollReveal>
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-accent/30 text-foreground px-4 py-2 rounded-full mb-6 border border-accent/50">
-              <span className="text-lg">📊</span>
-              <span className="font-semibold text-sm">Tokenomics</span>
+              <span className="text-lg">🚬</span>
+              <span className="font-semibold text-sm">puffunomics</span>
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               The <span className="text-gradient-gold">Blueprint</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Built with precision, designed for community growth
+              For effective growth, Puff-puff with precision, lol.
             </p>
           </div>
         </ScrollReveal>
@@ -57,7 +57,7 @@ const TokenomicsSection = () => {
               {/* Corner decorations */}
 
               <h3 className="font-display text-2xl font-bold text-center mb-8 text-foreground">
-                Construction Specifications
+                Vaping Specifications
               </h3>
 
               {/* Token Info Grid */}
@@ -77,16 +77,15 @@ const TokenomicsSection = () => {
               <div className="bg-wood/10 rounded-2xl p-6 border-2 border-wood/30">
                 <div className="flex items-center justify-between mb-3">
                   <p className="font-display font-bold text-foreground flex items-center gap-2">
-                    <span className="text-xl">📋</span>
                     Contract Address
                   </p>
                   <a
-                    href={`https://bscscan.com/token/${contractAddress}`}
+                    href={`https://solscan.io/account/${contractAddress}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-accent hover:text-primary flex items-center gap-1 font-medium"
                   >
-                    View on BSCScan
+                    View on Solscan
                     <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
@@ -118,26 +117,26 @@ const TokenomicsSection = () => {
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="text-center p-4 bg-background/50 rounded-2xl border border-border">
                   <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-success/20 flex items-center justify-center">
-                    <span className="text-2xl">🔒</span>
+                    <span className="text-2xl">🔥</span>
                   </div>
-                  <p className="font-display font-bold text-foreground">LP Locked</p>
-                  <p className="text-sm text-muted-foreground">Secure Foundation</p>
+                  <p className="font-display font-bold text-foreground">LP Burned</p>
+                  <p className="text-sm text-muted-foreground">$VNUT is traded always</p>
                 </div>
 
                 <div className="text-center p-4 bg-background/50 rounded-2xl border border-border">
                   <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-primary/20 flex items-center justify-center">
-                    <span className="text-2xl">👥</span>
+                    <span className="text-2xl">🐿️</span>
                   </div>
                   <p className="font-display font-bold text-foreground">Community</p>
-                  <p className="text-sm text-muted-foreground">Owned by Holders</p>
+                  <p className="text-sm text-muted-foreground">Owned by Vapers</p>
                 </div>
 
                 <div className="text-center p-4 bg-background/50 rounded-2xl border border-border">
                   <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-bnb/20 flex items-center justify-center">
                     <span className="text-2xl">⚡</span>
                   </div>
-                  <p className="font-display font-bold text-foreground">0% Tax</p>
-                  <p className="text-sm text-muted-foreground">No Hidden Fees</p>
+                  <p className="font-display font-bold text-foreground">Cashback</p>
+                  <p className="text-sm text-muted-foreground">Vapers are getting rewarded</p>
                 </div>
               </div>
             </div>

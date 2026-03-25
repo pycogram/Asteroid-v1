@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { ExternalLink, Wallet, Users, Copy, Check } from "lucide-react";
 import heroBackground from "@/assets/hero-background.png";
-import horsePiMascot from "@/assets/horsepi-mascot.png";
+import squirrelMascot from "@/assets/squirrel-mascot.png";
 
 const HeroSection = () => {
   const [copied, setCopied] = useState(false);
   const [holders, setHolders] = useState(1247);
   const [transactions, setTransactions] = useState(8934);
 
-  const contractAddress = "0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444";
+  const contractAddress = "CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump";
 
   // Simulate live counters
   useEffect(() => {
@@ -60,19 +60,20 @@ const HeroSection = () => {
           <div className="text-center w-[80%] sm:w-auto place-self-center sm:place-self-auto lg:text-left animate-slide-up">
             <div className="inline-flex items-center gap-2 bg-bnb/20 text-foreground px-4 py-2 rounded-full mb-6 border border-bnb/30">
               <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
-              <span className="font-semibold text-sm">Live on BNB Chain</span>
+              <span className="font-semibold text-sm">Live on Solana Chain</span>
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Building Wealth,
+              Just Puff-puffing,
               <br />
-              <span className="text-gradient-gold">One Block at a Time</span>
-              <span className="inline-block ml-2 animate-wiggle">🏗️</span>
+              <span className="text-gradient-gold">For a Living</span>
+              <span className="inline-block ml-2 animate-wiggle">🚬🐿️</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              <strong className="text-foreground">HorsePi (派马)</strong> - Constructing the Future on BNB Chain. 
-              Join the construction crew and build your fortune with us!
+              <strong className="text-foreground">The Vaping Squirrel ($VNUT)</strong> -  
+                A chill squirrel that vapes and never panics, just vibes.
+                Blowing clouds while the market moves, built for the culture.
             </p>
 
             {/* Contract Address */}
@@ -98,22 +99,22 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a
-                href="https://pancakeswap.finance/swap?outputCurrency=0x3bf3dd1d774feec9c3ced7f1079b2a9c74144444"
+                href="https://pump.fun/coin/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-hero flex items-center justify-center gap-2 text-lg"
               >
-                Buy on PancakeSwap
+                Buy on Pumpfun
                 <ExternalLink className="w-5 h-5" />
               </a>
               <a
-                href="https://t.me/pihorsebsc_cto"
+                href="https://x.com/i/communities/2036496453833490691"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary-hero flex items-center justify-center gap-2 text-lg"
               >
                 <Users className="w-5 h-5" />
-                Join the Crew
+                Join Us
               </a>
             </div>
 
@@ -123,19 +124,19 @@ const HeroSection = () => {
                 <p className="font-display text-2xl sm:text-3xl font-bold text-foreground">
                   {holders.toLocaleString()}+
                 </p>
-                <p className="text-sm text-muted-foreground font-medium">Builders</p>
+                <p className="text-sm text-muted-foreground font-medium">Vapers</p>
               </div>
               <div className="w-px h-12 bg-border hidden sm:block" />
               <div className="text-center">
                 <p className="font-display text-2xl sm:text-3xl font-bold text-foreground">
                   {transactions.toLocaleString()}+
                 </p>
-                <p className="text-sm text-muted-foreground font-medium">Transactions</p>
+                <p className="text-sm text-muted-foreground font-medium">Squirrels</p>
               </div>
               <div className="w-px h-12 bg-border hidden sm:block" />
               <div className="text-center">
                 <p className="font-display text-2xl sm:text-3xl font-bold text-primary">CTO</p>
-                <p className="text-sm text-muted-foreground font-medium">Community Takeover</p>
+                <p className="text-sm text-muted-foreground font-medium">Community Driven</p>
               </div>
             </div>
           </div>
@@ -147,19 +148,19 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-radial from-primary/40 via-bnb/20 to-transparent blur-3xl rounded-full scale-90" />
               
               <img
-                src={horsePiMascot}
-                alt="HorsePi Mascot"
+                src={squirrelMascot}
+                alt="Squirrel Mascot"
                 className="relative z-10 w-80 sm:w-96 lg:w-[450px] drop-shadow-2xl animate-float cursor-pointer hover:scale-105 transition-transform rounded-3xl"
               />
 
               {/* Floating elements around mascot */}
               <div className="absolute -top-4 -right-4 bg-bnb text-bnb-foreground px-4 py-2 rounded-xl font-bold shadow-lg animate-bounce-slow z-20">
-                🔨 Building!
+                🚬💨 Vaping!
               </div>
               
               <div className="absolute -bottom-2 -left-4 bg-card border border-border px-4 py-2 rounded-xl shadow-lg animate-bounce-slow z-20" style={{ animationDelay: "0.5s" }}>
-                <span className="text-2xl">π</span>
-                <span className="font-bold ml-1">派马</span>
+                <span className="text-2xl">🐿️</span>
+                <span className="font-bold ml-1">💨</span>
               </div>
             </div>
           </div>

@@ -12,22 +12,22 @@ interface Transaction {
 
 const LiveActivityFeed = () => {
   const [transactions, setTransactions] = useState<Transaction[]>([
-    { id: "1", type: "buy", amount: "0.5 BNB", wallet: "0x7a3...f2d9", time: "2s ago" },
-    { id: "2", type: "buy", amount: "1.2 BNB", wallet: "0x3b2...a4c1", time: "15s ago" },
-    { id: "3", type: "buy", amount: "0.8 BNB", wallet: "0x9c4...e7f3", time: "32s ago" },
-    { id: "4", type: "buy", amount: "2.0 BNB", wallet: "0x1d5...b8a2", time: "1m ago" },
-    { id: "5", type: "buy", amount: "0.3 BNB", wallet: "0x6e8...c9d4", time: "2m ago" },
+    { id: "1", type: "buy", amount: "0.5 Sol", wallet: "BT7a3...f2d9", time: "2s ago" },
+    { id: "2", type: "buy", amount: "1.2 Sol", wallet: "vt3b2...a4c1", time: "15s ago" },
+    { id: "3", type: "buy", amount: "0.8 Sol", wallet: "aa9c4...e7f3", time: "32s ago" },
+    { id: "4", type: "buy", amount: "2.0 Sol", wallet: "8i1d5...b8a2", time: "1m ago" },
+    { id: "5", type: "buy", amount: "0.3 Sol", wallet: "xT6e8...c9d4", time: "2m ago" },
   ]);
 
-  const [marketCap, setMarketCap] = useState(125000);
-  const [liquidity, setLiquidity] = useState(45000);
+  const [marketCap, setMarketCap] = useState(625000);
+  const [liquidity, setLiquidity] = useState(77000);
 
   // Simulate new transactions
   useEffect(() => {
     const interval = setInterval(() => {
-      const amounts = ["0.2 BNB", "0.5 BNB", "0.8 BNB", "1.0 BNB", "1.5 BNB", "2.0 BNB"];
+      const amounts = ["0.2 Sol", "0.5 Sol", "0.8 Sol", "1.0 Sol", "1.5 Sol", "2.0 Sol"];
       const randomAmount = amounts[Math.floor(Math.random() * amounts.length)];
-      const randomWallet = `0x${Math.random().toString(16).slice(2, 5)}...${Math.random().toString(16).slice(2, 6)}`;
+      const randomWallet = `${Math.random().toString(16).slice(2, 6)}...${Math.random().toString(16).slice(2, 6)}`;
 
       const newTransaction: Transaction = {
         id: Date.now().toString(),
@@ -57,11 +57,11 @@ const LiveActivityFeed = () => {
       {/* Background pattern */}
       <div className="absolute inset-0 bg-construction-pattern opacity-30" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container md:w-[90%] place-self-center mx-auto px-4 relative z-10">
         {/* Stats Cards */}
         <ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-            <div className="card-construction p-4 sm:p-6">
+            <div className="relative bg-background rounded-3xl border-2 border-border hover:border-primary/50 transition-all hover:shadow-xl h-full p-4 sm:p-6">
               <div className="flex items-center gap-2 mb-2">
                 <TrendingUp className="w-5 h-5 text-success" />
                 <span className="text-sm text-muted-foreground font-medium">Market Cap</span>
@@ -71,7 +71,7 @@ const LiveActivityFeed = () => {
               </p>
             </div>
 
-            <div className="card-construction p-4 sm:p-6">
+            <div className="relative bg-background rounded-3xl border-2 border-border hover:border-primary/50 transition-all hover:shadow-xl h-full p-4 sm:p-6">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-5 h-5 rounded-full bg-accent flex items-center justify-center text-xs">🔒</div>
                 <span className="text-sm text-muted-foreground font-medium">Liquidity</span>
@@ -81,22 +81,22 @@ const LiveActivityFeed = () => {
               </p>
             </div>
 
-            <div className="card-construction p-4 sm:p-6">
+            <div className="relative bg-background rounded-3xl border-2 border-border hover:border-primary/50 transition-all hover:shadow-xl h-full p-4 sm:p-6">
               <div className="flex items-center gap-2 mb-2">
                 <Users className="w-5 h-5 text-primary" />
                 <span className="text-sm text-muted-foreground font-medium">Holders</span>
               </div>
-              <p className="font-display text-xl sm:text-2xl font-bold text-foreground">1,247+</p>
+              <p className="font-display text-xl sm:text-2xl font-bold text-foreground">3629</p>
             </div>
 
-            <div className="card-construction p-4 sm:p-6">
+            <div className="relative bg-background rounded-3xl border-2 border-border hover:border-primary/50 transition-all hover:shadow-xl h-full p-4 sm:p-6">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-lg">🔨</span>
+                <span className="text-lg">🐿️</span>
                 <span className="text-sm text-muted-foreground font-medium">Status</span>
               </div>
               <p className="font-display text-lg sm:text-xl font-bold text-success flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
-                Building!
+                Vaping!
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@ const LiveActivityFeed = () => {
 
         {/* Live Transaction Feed */}
         <ScrollReveal delay={0.2}>
-          <div className="card-construction p-4 sm:p-6">
+          <div className="bg-background rounded-sm border-2 border-border hover:border-primary/50 transition-all hover:shadow-x lp-4 sm:p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-display text-lg font-bold flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-success animate-pulse" />
