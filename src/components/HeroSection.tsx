@@ -78,7 +78,7 @@ const HeroSection = () => {
 
             {/* Contract Address */}
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-4 mb-8 border border-border max-w-xl mx-auto lg:mx-0">
-              <p className="text-xs text-muted-foreground mb-2 font-medium">Contract Address</p>
+              <p className="text-xs text-start md:text-center text-muted-foreground mb-2 font-medium">Contract Address</p>
               <div className="flex items-center gap-2">
                 <code className="flex-1 text-xs sm:text-sm font-mono text-foreground truncate">
                   {contractAddress}
