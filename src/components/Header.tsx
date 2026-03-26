@@ -86,14 +86,6 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <a
-                href="https://pump.fun/coin/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-hero text-center py-3 mt-2"
-              >
-                Buy on Pumpfun
-              </a>
             </div>
           </nav>
         )}
