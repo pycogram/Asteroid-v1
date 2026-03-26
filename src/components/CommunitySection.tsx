@@ -59,7 +59,7 @@ const CommunitySection = () => {
               </p>
 
               <a
-                href="https://x.com/i/communities/2036496453833490691"
+                href="https://x.com/i/communities/2037194640432976372"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-primary text-primary-foreground font-bold py-4 px-8 rounded-2xl shadow-lg hover:scale-105 transition-transform"

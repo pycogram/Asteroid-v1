@@ -108,7 +108,7 @@ const HeroSection = () => {
                 <ExternalLink className="w-5 h-5" />
               </a>
               <a
-                href="https://x.com/i/communities/2036496453833490691"
+                href="https://x.com/i/communities/2037194640432976372"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary-hero flex w-fit md:w-auto items-center justify-center gap-2 text-lg"

@@ -14,7 +14,7 @@ const Footer = () => {
 
   const links = {
     socials: [
-      { name: "Twitter / X", url: "https://x.com/i/communities/2036496453833490691" },
+      { name: "Twitter / X", url: "https://x.com/i/communities/2037194640432976372" },
     ],
     resources: [
       { name: "Pumpswap", url: `https://pump.fun/coin/${contractAddress}` },
