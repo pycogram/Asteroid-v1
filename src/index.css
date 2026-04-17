@@ -240,25 +240,24 @@
 }
 
 @keyframes tweetRoam {
-  0%   { transform: translate(2vw,    3vh);   }
-  14%  { transform: translate(calc(100vw - 220px), 3vh);   }
-  28%  { transform: translate(calc(100vw - 220px), calc(100vh - 160px)); }
-  42%  { transform: translate(2vw,    calc(100vh - 160px)); }
-  56%  { transform: translate(2vw,    40vh);  }
-  70%  { transform: translate(calc(100vw - 220px), 45vh);  }
-  85%  { transform: translate(45vw,   calc(100vh - 160px)); }
-  100% { transform: translate(2vw,    3vh);   }
+  0%   { transform: translate(2vw,   2vh);  }
+  12%  { transform: translate(72vw,  3vh);  }
+  25%  { transform: translate(74vw,  75vh); }
+  37%  { transform: translate(2vw,   78vh); }
+  50%  { transform: translate(38vw,  40vh); }
+  62%  { transform: translate(2vw,   45vh); }
+  75%  { transform: translate(65vw,  55vh); }
+  87%  { transform: translate(50vw,  2vh);  }
+  100% { transform: translate(2vw,   2vh);  }
 }
-
 .tweet-roam {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   pointer-events: none;
-  animation: tweetRoam 22s ease-in-out infinite;
+  animation: tweetRoam 20s ease-in-out infinite;
 }
-
 .tweet-roam > * {
   pointer-events: auto;
 }
