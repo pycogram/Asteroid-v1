@@ -22,10 +22,10 @@ const CommunitySection = () => {
   ];
 
   return (
-    <section id="community" className="py-16 lg:py-24 bg-card relative overflow-hidden">
+    <section id="community" className="py-16 lg:py-24 relative overflow-hidden" style={{background: 'linear-gradient(180deg, #03020a 0%, #0d0630 100%)'}}>
       {/* Decorative elements */}
-      <div className="absolute top-10 right-10 text-8xl opacity-5">🐿️</div>
-      <div className="absolute bottom-10 left-10 text-8xl opacity-5">💨</div>
+      <div className="absolute top-10 right-10 text-8xl opacity-5">💫</div>
+      <div className="absolute bottom-10 left-10 text-8xl opacity-5">✨</div>
 
       <div className="container mx-auto px-4">
         <ScrollReveal>
@@ -34,12 +34,8 @@ const CommunitySection = () => {
               <Users className="w-4 h-4" />
               <span className="font-semibold text-sm">Join the Crew</span>
             </div>
-
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              <span className="text-gradient-gold">Puff-Puff</span> Hub
-            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of vapers!
+              Join thousands of explorers!
             </p>
           </div>
         </ScrollReveal>
@@ -50,16 +46,16 @@ const CommunitySection = () => {
           {/* Community CTA */}
           <ScrollReveal delay={0.3}>
             <div className="wood-panel text-center">
-              <div className="text-5xl mb-4">🐿️</div>
+              <div className="text-5xl mb-4">🐶</div>
               <h3 className="font-display text-2xl sm:text-3xl font-bold mb-4">
-                Ready to Start Puff-Puffing?
+                Ready to Start Space-Exploration?
               </h3>
               <p className="text-wood-foreground/80 mb-6 max-w-lg mx-auto">
-                Join our X community to connect with fellow Vapers, get the latest updates, and be part of something amazing!
+                Join our X community to connect with fellow, get the latest updates, and be part of something amazing!
               </p>
 
               <a
-                href="https://x.com/i/communities/2037194640432976372"
+                href="https://x.com/i/communities/2019568206269280468"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-primary text-primary-foreground font-bold py-4 px-8 rounded-2xl shadow-lg hover:scale-105 transition-transform"

@@ -9,7 +9,7 @@ const Header = () => {
   const navLinks = [
     { name: "About", href: "#about" },
     { name: "Meme", href: "#meme"},
-    { name: "Gallery", href: "#gallery" },
+    { name: "Chart", href: "#chart"},
     { name: "Tokenomics", href: "#tokenomics" },
     { name: "How to Buy", href: "#how-to-buy" },
     { name: "Roadmap", href: "#roadmap" },
@@ -24,14 +24,14 @@ const Header = () => {
           <a href="#" className="flex items-center gap-3 group">
             <img 
               src={vnutLogo} 
-              alt="VNUT Logo" 
-              className="w-10 h-10 md:w-12 w:h-12 rounded-sm border border-border shadow-lg group-hover:scale-110 transition-transform"
+              alt="asteroid Logo" 
+              className="w-10 h-10 md:w-12 w:h-12 rounded-sm shadow-lg group-hover:scale-110 transition-transform"
             />
             <div className="hidden sm:block">
               <h1 className="font-display text-xl font-bold text-foreground">
-                VNUT
+                ASTEROID
               </h1>
-              <p className="text-xs text-muted-foreground font-medium">The Vaping Squirrel</p>
+              <p className="text-xs text-muted-foreground font-medium">The Mascot of SpaceX</p>
             </div>
           </a>
 
@@ -53,7 +53,7 @@ const Header = () => {
           <div className="flex items-center absolute md:relative right-[6rem] md:right-[unset] gap-3">
             <ThemeToggle />
             <a
-              href="https://pump.fun/coin/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump"
+              href="https://pump.fun/coin/F1ppSHedBsGGwEKH78JVgoqr4xkQHswtsGGLpgM7bCP2"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden xl:flex btn-hero text-sm py-2 px-4 items-center gap-2"

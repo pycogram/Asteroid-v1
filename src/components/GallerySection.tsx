@@ -64,7 +64,7 @@ const GallerySection = () => {
             viewport={{ once: true }}
             className="font-display text-3xl md:text-5xl text-foreground text-glow mb-3"
           >
-            $VNUTting 🐿️💨
+            $ASTEROIDting 🐶🚀🌌
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -72,7 +72,7 @@ const GallerySection = () => {
             viewport={{ once: true }}
             className="text-muted-foreground text-lg"
           >
-            Real ones spotted in the wild...
+            Let's go to Moon in Space...
           </motion.p>
         </div>
 

@@ -12,7 +12,7 @@ interface CostumePreset {
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
-
+ 
 const COSTUME_PRESETS: CostumePreset[] = [
   {
     id: "police",
@@ -204,7 +204,7 @@ export default function PfpMemeGenerator() {
           className="text-4xl font-black tracking-tight mb-2 text-black dark:text-white"
           style={{ fontFamily: "'Arial Black', Impact, sans-serif" }}
         >
-          🐿️ $VNUT MEME
+          🐶🚀 $ASTEROID PFP MEME
         </h1>
         <p className="text-black/50 dark:text-white/40 text-sm mt-10">
           Upload a photo · Pick a costume · Let do the magic
@@ -398,7 +398,7 @@ export default function PfpMemeGenerator() {
             }`}
             style={{ fontFamily: "'Arial Black', Impact, sans-serif" }}
           >
-            {stage === "generating" ? "⏳ Generating..." : "✨ Generate $vNUT PFP"}
+            {stage === "generating" ? "⏳ Generating..." : "✨ Generate PFP"}
           </button>
 
           {/* Tips */}

@@ -4,7 +4,7 @@ import squirrelLogo from "@/assets/vnut-logo.png";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump";
+  const contractAddress = "F1ppSHedBsGGwEKH78JVgoqr4xkQHswtsGGLpgM7bCP2";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress);
@@ -14,17 +14,17 @@ const Footer = () => {
 
   const links = {
     socials: [
-      { name: "Twitter / X", url: "https://x.com/i/communities/2037194640432976372" },
+      { name: "Twitter / X", url: "https://x.com/i/communities/2019568206269280468" },
     ],
     resources: [
       { name: "Pumpswap", url: `https://pump.fun/coin/${contractAddress}` },
       { name: "Solscan", url: `https://solscan.io/token/${contractAddress}` },
-      { name: "Dexscreener", url: `https://dexscreener.com/solana/8drcdmpftp8ddp4uqtog3brzdwhx2y5c3ykd3jkgbyzp` },
+      { name: "Dexscreener", url: `https://dexscreener.com/solana/91tdwygdurpekg8jcwcfzjn7agflgb9zb711fhpygr2j` },
     ],
   };
 
   return (
-    <footer className="bg-secondary text-secondary-foreground relative overflow-hidden">
+    <footer className="relative overflow-hidden" style={{background: '#060118'}}>
       {/* Construction stripe */}
       <div className="h-2 bg-[repeating-linear-gradient(90deg,hsl(var(--primary))_0px,hsl(var(--primary))_20px,hsl(var(--foreground))_20px,hsl(var(--foreground))_40px)]" />
 
@@ -33,14 +33,14 @@ const Footer = () => {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src={squirrelLogo} alt="VNUT" className="w-12 h-12 rounded-sm border border-border" />
+              <img src={squirrelLogo} alt="ASTEROID" className="w-12 h-12 rounded-sm border border-border" />
               <div>
                 <h4 className="font-display text-xl font-bold">The Vaping Squirrel</h4>
-                <p className="text-sm opacity-80">$VNUT • Solana</p>
+                <p className="text-sm opacity-80">$ASTEROID • Solana</p>
               </div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              The puff-puffers are already living in the future...
+              The HOLDERS are already living in the future...
             </p>
           </div>
 
@@ -109,7 +109,7 @@ const Footer = () => {
         {/* Disclaimer */}
         <div className="border-t border-secondary-foreground/20 pt-8 mb-8">
           <p className="text-xs opacity-60 text-center max-w-3xl mx-auto leading-relaxed">
-            <strong>Disclaimer:</strong> Cryptocurrency investments carry significant risk. The value of vNUT can be volatile and may result in loss of funds. 
+            <strong>Disclaimer:</strong> Cryptocurrency investments carry significant risk. The value of ASTEROID can be volatile and may result in loss of funds. 
             This is not financial advice. Always Do Your Own Research (DYOR) before investing. Only invest what you can afford to lose.
           </p>
         </div>
@@ -117,10 +117,10 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm opacity-80">
           <p className="flex items-center gap-2">
-            Built with for $VNUT Community
+            Built with for $ASTEROID Community
           </p>
           <div className="flex items-center gap-4">
-            <span>© 2026 $VNUT</span>
+            <span>© 2026 $ASTEROID</span>
             <span>•</span>
             <span className="flex items-center gap-1">
               <span className="text-lg">⛓️</span>

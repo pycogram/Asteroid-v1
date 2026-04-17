@@ -7,74 +7,78 @@ const features = [
   {
     icon: <Hammer className="w-6 h-6" />,
     title: "Fair Launch - CTO",
-    description: "Community Driven - Built by the vapers, for the vapers",
+    description: "Community Driven - Built by the explorers, for the explorers",
   },
   {
     icon: <Users className="w-6 h-6" />,
     title: "Community-Owned",
-    description: "We build together as one united vaping crew",
+    description: "We build together as one united space crew",
   },
   {
     icon: <Eye className="w-6 h-6" />,
     title: "Transparent",
-    description: "Open blueprint for all - no hidden agendas",
+    description: "Open mission for all — no hidden agendas",
   },
   {
     icon: <Shield className="w-6 h-6" />,
     title: "Solid Foundation",
-    description: "Built on the reliable Soalana Chain infrastructure",
+    description: "Built on the reliable Solana Chain infrastructure",
   },
   {
     icon: <Building className="w-6 h-6" />,
     title: "Main Purpose",
-    description: "Always vaping, never ever stop vaping",
+    description: "Built for orbit — not designed for Earth",
   },
 ];
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 lg:py-24 bg-card relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-10 left-10 text-6xl opacity-10 animate-float">💨</div>
-      <div className="absolute bottom-10 right-10 text-6xl opacity-10 animate-float" style={{ animationDelay: "2s" }}>💨</div>
+    <section id="about" className="py-16 lg:py-24 bg-background relative overflow-hidden">
+      
+      {/* 🌌 Space Background */}
+      <div className="w-full h-full" style={{
+        background: 'radial-gradient(ellipse at top left, #1a0a3e 0%, #060b2e 40%, #03020a 100%)'
+      }} />
+
+      {/* 🌙 Floating particles */}
+      <div className="absolute top-10 left-10 text-6xl opacity-10 animate-float">🌙</div>
+      <div className="absolute bottom-10 right-10 text-6xl opacity-10 animate-float" style={{ animationDelay: "2s" }}>🌒</div>
 
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
+          
+          {/* LEFT CONTENT */}
           <ScrollReveal direction="left">
             <div>
               <div className="inline-flex items-center gap-2 bg-primary/20 text-foreground px-4 py-2 rounded-full mb-6 border border-primary/30">
-                <span className="text-lg">🐿️</span>
-                <span className="font-semibold text-sm">About $NUT</span>
+                <span className="text-lg">🐶</span>
+                <span className="font-semibold text-sm">About $Asteroid</span>
               </div>
 
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                More Than a Meme,
+                Asteroids,
                 <br />
-                <span className="text-gradient-gold">A Movement</span>
+                <span className="text-gradient-gold">it’s time to leave orbit</span> 🚀🌌
               </h2>
 
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Squirrels, it’s time to level up 🐿️💨
-                No fear, no panic, just pure vibes
-                Stack nuts, blow clouds, stay chill
-                If you’re not vaping, what are you even doing
-                We don’t chase charts, we float above them
-                Cloud gang only, no exceptions
-                Join the vibe or stay grounded
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed space-y-2">
+                No gravity. No limits. Just pure trajectory. <br />
+                Ride the momentum, drift past the noise, stay cosmic. <br />
+                If you’re still grounded, what are you even doing?
               </p>
 
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                The Vaping foundation is super solid, the blueprint is clear, and the future is being built 
-                right now. Just fkn join the crew and grab your Vape!
+                We don’t chase charts - we move beyond them.  
+                Orbit gang only. No exceptions.  
+                Join the mission… or stay on Earth.
               </p>
 
-              {/* Features Grid */}
+              {/* FEATURES */}
               <div className="space-y-4">
                 {features.map((feature, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-4 p-4 rounded-2xl bg-background/50 border border-border hover:border-primary/30 transition-colors group"
+                    className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-primary/30 transition-all group hover:shadow-lg hover:shadow-purple-500/10"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors flex-shrink-0">
                       {feature.icon}
@@ -92,43 +96,46 @@ const AboutSection = () => {
             </div>
           </ScrollReveal>
 
-          {/* Visual */}
+          {/* RIGHT VISUAL */}
           <ScrollReveal direction="right" delay={0.2}>
             <div className="relative flex justify-center">
               <div className="relative">
-                {/* Blueprint background */}
-                <div className="absolute inset-0 blueprint-card scale-110 rounded-3xl" />
-                
-                {/* Horse head badge */}
+
+                {/* 🌠 Glow instead of blueprint */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 blur-2xl rounded-3xl" />
+
+                {/* HEAD */}
                 <div className="relative z-10 w-72 sm:w-80 lg:w-96 aspect-square flex items-center justify-center">
                   <img
                     src={squirrelHead}
-                    alt="VNUT"
+                    alt="asteroid"
                     className="w-64 sm:w-72 lg:w-80 drop-shadow-xl rounded-3xl"
                   />
                 </div>
 
-                {/* Full body mascot floating below */}
+                {/* FLOATING MASCOT */}
                 <div className="absolute -bottom-16 -right-8 w-32 sm:w-40">
                   <img
                     src={squirrelMascot}
-                    alt="VNUT Builder"
+                    alt="asteroid"
                     className="drop-shadow-xl animate-float"
                   />
                 </div>
 
-                {/* Stats badges */}
-                <div className="absolute -top-4 right-0 bg-success text-success-foreground px-4 py-2 rounded-xl font-bold shadow-lg z-20">
-                  ✓ Vaped
+                {/* BADGES */}
+                <div className="absolute -top-4 right-0 bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-2 rounded-xl font-bold shadow-lg z-20">
+                  ✓ ASTEROIDED
                 </div>
 
-                <div className="absolute -bottom-4 left-0 bg-bnb text-bnb-foreground px-4 py-2 rounded-xl font-bold shadow-lg flex items-center gap-2 z-20">
+                <div className="absolute -bottom-4 left-0 bg-black/60 border border-white/10 backdrop-blur-md text-white px-4 py-2 rounded-xl font-bold shadow-lg flex items-center gap-2 z-20">
                   <span className="text-xl">⛓️</span>
                   Solana Chain
                 </div>
+
               </div>
             </div>
           </ScrollReveal>
+
         </div>
       </div>
     </section>

@@ -4,67 +4,66 @@ import ScrollReveal from "./ScrollReveal";
 const phases = [
   {
     phase: "Phase 1",
-    title: "Vaping the Foundation",
+    title: "Ignition",
     status: "completed",
-    icon: "🐿️",
+    icon: "🚀",
     items: [
-      "Token Launch on Pumpfun",
-      "Community Driven",
-      "Social Media Setup",
-      "$VNUT Bonded",
-      "Website V1 Launch",
+      "Launch on Pumpfun",
+      "Core Community Formation",
+      "Brand & Mascot Identity Established",
+      "Website V1 Deployment",
+      "Initial Liquidity Bonded",
     ],
   },
   {
     phase: "Phase 2",
-    title: "vaping the Structure",
+    title: "Orbit Entry",
     status: "in-progress",
-    icon: "🪵",
+    icon: "🛰️",
     items: [
-      "Marketing Campaigns",
-      "Influencer Partnerships",
+      "Strategic Marketing Campaigns",
+      "Influencer & Community Collaborations",
       "Holder Growth to 3,000+",
-      "Community Expansion",
-      "Moonshoot Listings",
+      "Ecosystem Awareness Expansion",
       "CoinGecko & CMC Listings",
     ],
   },
   {
     phase: "Phase 3",
-    title: "Vaping the Walls",
+    title: "Deep Space Expansion",
     status: "upcoming",
-    icon: "💨",
+    icon: "🌌",
     items: [
       "CEX Listing Applications",
-      "NFT Collection Launch",
-      "Merchandise Store",
-      "Strategic Partnerships",
-      "Community Events",
+      "Asteroid NFT Collection",
+      "Merch & Brand Assets Launch",
+      "Partnership Integrations",
+      "Community Events & Missions",
     ],
   },
   {
     phase: "Phase 4",
-    title: "Vaping the Roof",
+    title: "Interstellar Scaling",
     status: "upcoming",
-    icon: "🌳",
+    icon: "🌠",
     items: [
       "Major CEX Listings",
-      "$Vnut Ecosystem Expansion",
-      "Cross-chain Bridge",
+      "Ecosystem Expansion",
+      "Cross-chain Integrations",
       "Global Marketing Push",
     ],
   },
   {
     phase: "Phase 5",
-    title: "Vape Opening",
+    title: "Beyond Orbit",
     status: "upcoming",
-    icon: "🎉",
+    icon: "🪐",
     items: [
-      "Full Ecosystem Launch",
-      "Major Exchange Listings",
+      "Full Ecosystem Activation",
+      "Top-Tier Exchange Listings",
       "Global Community Events",
-      "Charitable Initiatives",
-      "To The Moon! 🐿️",
+      "Long-Term Brand Evolution",
+      "Sustained Growth Beyond Hype",
     ],
   },
 ];
@@ -93,7 +92,7 @@ const RoadmapSection = () => {
   };
 
   return (
-    <section id="roadmap" className="py-16 lg:py-24 bg-background relative overflow-hidden">
+    <section id="roadmap" className="py-16 lg:py-24 relative overflow-hidden" style={{background: '#03020a'}}>
       {/* Blueprint background */}
       <div className="absolute inset-0 opacity-5">
         <div className="w-full h-full bg-construction-pattern" />
@@ -108,10 +107,10 @@ const RoadmapSection = () => {
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Puff-Puff <span className="text-gradient-gold">Timeline</span>
+              Space <span className="text-gradient-gold">Timeline</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our blueprint to vaping the ultimate meme coin ecosystem
+              Our blueprint to transporting to $Asteroid ecosystem
             </p>
           </div>
         </ScrollReveal>

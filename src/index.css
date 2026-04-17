@@ -98,8 +98,16 @@
     @apply border-border;
   }
 
-  body {
+  /* body {
     @apply bg-background text-foreground font-body antialiased;
+  } */
+
+  body {
+    background: #03020a;
+    background-image: 
+      radial-gradient(ellipse at 20% 50%, #0d0630 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, #060b2e 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 100%, #0a0520 0%, transparent 60%);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -224,4 +232,33 @@
 @keyframes wiggle {
   0%, 100% { transform: rotate(-3deg); }
   50% { transform: rotate(3deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.4); }
+}
+
+@keyframes tweetRoam {
+  0%   { transform: translate(2vw,    3vh);   }
+  14%  { transform: translate(calc(100vw - 220px), 3vh);   }
+  28%  { transform: translate(calc(100vw - 220px), calc(100vh - 160px)); }
+  42%  { transform: translate(2vw,    calc(100vh - 160px)); }
+  56%  { transform: translate(2vw,    40vh);  }
+  70%  { transform: translate(calc(100vw - 220px), 45vh);  }
+  85%  { transform: translate(45vw,   calc(100vh - 160px)); }
+  100% { transform: translate(2vw,    3vh);   }
+}
+
+.tweet-roam {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  animation: tweetRoam 22s ease-in-out infinite;
+}
+
+.tweet-roam > * {
+  pointer-events: auto;
 }

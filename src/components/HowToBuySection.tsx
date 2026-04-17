@@ -30,26 +30,26 @@ const steps = [
     icon: "🔗",
     link: {
       text: "Open Pumpfun",
-      url: "https://pump.fun/",
+      url: "https://pump.fun/F1ppSHedBsGGwEKH78JVgoqr4xkQHswtsGGLpgM7bCP2",
     },
   },
   {
     number: "04",
     title: "Paste Contract Address",
     description: "Copy our contract address and paste it in the token search field.",
-    icon: "🐿️",
-    contract: "CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump",
+    icon: "🐶",
+    contract: "F1ppSHedBsGGwEKH78JVgoqr4xkQHswtsGGLpgM7bCP2",
   },
   {
     number: "05",
-    title: "Swap Sol for $VNUT",
+    title: "Swap Sol for $ASTROID",
     description: "Enter the amount of SOL you want to swap and confirm the transaction.",
     icon: "🔄",
   },
   {
     number: "06",
     title: "Add to Wallet",
-    description: "Add the token to your wallet to see your $VNUT balance. Welcome to the crew!",
+    description: "Add the token to your wallet to see your $ASTEROID balance. Welcome to the crew!",
     icon: "🎉",
   },
 ];
@@ -64,7 +64,7 @@ const HowToBuySection = () => {
   };
 
   return (
-    <section id="how-to-buy" className="py-16 lg:py-24 bg-card relative overflow-hidden">
+    <section id="how-to-buy" className="py-16 lg:py-24 relative overflow-hidden" style={{background: 'linear-gradient(180deg, #060b2e 0%, #03020a 100%)'}}>
       {/* Construction zone decorations */}
       <div className="absolute top-0 left-0 right-0 h-4 bg-[repeating-linear-gradient(90deg,hsl(var(--primary))_0px,hsl(var(--primary))_20px,hsl(var(--foreground))_20px,hsl(var(--foreground))_40px)]" />
       
@@ -77,10 +77,10 @@ const HowToBuySection = () => {
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Grab Your <span className="text-gradient-gold">Puff-Puff</span>
+              Grab Your <span className="text-gradient-gold">$Astroid</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Follow these simple steps to join the vaping crew
+              Follow these simple steps to join the Space crew
             </p>
           </div>
         </ScrollReveal>
@@ -152,13 +152,13 @@ const HowToBuySection = () => {
         <ScrollReveal delay={0.4}>
           <div className="text-center mt-12">
             <a
-              href="https://pump.fun/coin/CR8w8WPtu1eeHj3UTTNYXVe8WX81iT1JexvLemTrpump"
+              href="https://pump.fun/coin/F1ppSHedBsGGwEKH78JVgoqr4xkQHswtsGGLpgM7bCP2"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hero inline-flex items-center gap-3 text-lg"
             >
               <Wallet className="w-5 h-5" />
-              Buy $VNUT Now
+              Buy $ASTEROID Now
               <ExternalLink className="w-5 h-5" />
             </a>
           </div>

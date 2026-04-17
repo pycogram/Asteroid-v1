@@ -20,7 +20,7 @@ const ThemeToggle = () => {
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(theme === "dark" ? "dark" : "dark")}
       className="p-2 rounded-xl bg-card border border-border hover:bg-muted transition-colors"
       aria-label="Toggle theme"
     >
