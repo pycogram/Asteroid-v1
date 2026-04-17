@@ -62,15 +62,14 @@ const AboutSection = () => {
               </h2>
 
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed space-y-2">
-                No gravity. No limits. Just pure trajectory. <br />
-                Ride the momentum, drift past the noise, stay cosmic. <br />
-                If you’re still grounded, what are you even doing?
+                Asteroid is a space mascot that flew on a SpaceX mission. <br />
+                It gained attention through Elon Musk and its designer, Liv. <br />
+                Plush sales support St. Jude Children’s Research Hospital. <br />
               </p>
 
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                We don’t chase charts - we move beyond them.  
-                Orbit gang only. No exceptions.  
-                Join the mission… or stay on Earth.
+                It traveled far into space with Polaris astronauts. <br />
+                It inspires kids to dream big and chase their goals.
               </p>
 
               {/* FEATURES */}

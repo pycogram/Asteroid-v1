@@ -122,8 +122,7 @@ const HeroSection = () => {
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
               <strong className="text-foreground">$ASTEROID</strong> ~ 
-                A space-born mascot designed for orbit, representing motion, resilience, and culture.  
-                Floating above the noise, built for something bigger.
+              The first Shiba in space, traveling aboard a SpaceX rocket, representing charity, space, technology, and dreams!
             </p>
 
             {/* Contract Address */}
