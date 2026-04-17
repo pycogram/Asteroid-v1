@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <img src={squirrelLogo} alt="ASTEROID" className="w-12 h-12 rounded-sm border border-border" />
               <div>
-                <h4 className="font-display text-xl font-bold">The Vaping Squirrel</h4>
+                <h4 className="font-display text-xl font-bold">The Space Mascot</h4>
                 <p className="text-sm opacity-80">$ASTEROID • Solana</p>
               </div>
             </div>
