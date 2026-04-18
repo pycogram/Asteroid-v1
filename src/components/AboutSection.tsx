@@ -33,7 +33,7 @@ const features = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 lg:py-24 relative overflow-hidden">
+    <section id="about" className="py-16 lg:py-24 bg-gradient-to-b from-[#03020a] to-[#060b2e] relative overflow-hidden">
       
       {/* 🌌 Space Background */}
       <div className="w-full h-full" style={{
