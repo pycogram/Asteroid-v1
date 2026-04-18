@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X, ExternalLink } from "lucide-react";
 import vnutLogo from "@/assets/vnut-logo.png";
-import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +50,6 @@ const Header = () => {
 
           {/* CTA Buttons & Theme Toggle */}
           <div className="flex items-center absolute md:relative right-[6rem] md:right-[unset] gap-3">
-            <ThemeToggle />
             <a
               href="https://pump.fun/coin/F1ppSHedBsGGwEKH78JVgoqr4xkQHswtsGGLpgM7bCP2"
               target="_blank"
