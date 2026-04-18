@@ -196,7 +196,7 @@ export default function PfpMemeGenerator() {
   // ── Render ─────────────────────────────────────────────────────────────────
 
   return (
-    <div id="meme" className="min-h-screen pt-[4rem] md:pt-[8rem] bg-transparent text-black dark:text-white flex flex-col items-center justify-start px-4 py-10">
+    <div id="meme" className="min-h-screen pt-[4rem] md:pt-[8rem] bg-gradient-to-b from-[#03020a] to-[#060b2e] text-black dark:text-white flex flex-col items-center justify-start px-4 py-10">
 
       {/* Header */}
       <div className="mb-10 text-center">
